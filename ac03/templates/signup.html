@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cadastro de Itens</title>
+
+   
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <script src="../static/js/signUp.js"></script>
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Inicio</a></li>
+            <li role="presentation"><a href="/list">Listar Itens</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Loja</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Cadastro de Produtos</h1>
+        <form class="form-signin" action="signUp" method="post" >
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Nome" required autofocus>
+        <label for="inputcategory" class="sr-only">Categoria</label>
+        <input type="text" name="inputcategory" id="inputcategory" class="form-control" placeholder="Insira Categoria" required autofocus>
+        <label for="inputprice" class="sr-only">Preço</label>
+        <input type="number" step="0.01" name="inputprice" id="inputprice" class="form-control" placeholder="Insira o Preço" required autofocus>
+        
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Registrar Item</button>
+      </form>
+      </div>
+
+
+    </div>
+  </body>
+</html>
