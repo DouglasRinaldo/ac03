@@ -39,7 +39,7 @@ def signUp():
             
             conn = mysql.connect()
             cursor = conn.cursor()
-            cursor.execute('insert into tbl_user (_name, _username, _price) VALUES (%s, %s, %s)', ( _name,_category,_price))
+            cursor.execute('insert into tbl_user (_name, _category, _price) VALUES (%s, %s, %s)', ( _name,_category,_price))
             conn.commit()
 
             return render_template('signup.html')
