@@ -57,7 +57,7 @@ def list():
     try:
             conn = mysql.connect()
             cursor = conn.cursor()
-            cursor.execute ('select _name, _username, _price from tbl_user')
+            cursor.execute ('select _name, _category, _price from tbl_user')
             data = cursor.fetchall()
             print(data[0]);
 
